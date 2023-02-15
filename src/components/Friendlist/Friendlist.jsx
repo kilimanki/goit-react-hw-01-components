@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
-import { Friendlistitem } from "./FriendlistItem";
-import css from "./friendlist.module.css";
+import PropTypes from 'prop-types';
+import { Friendlistitem } from './FriendlistItem';
 export const Friendlist = ({ list, id }) => {
   const elements = list.map(({ id, ...props }) => (
     <Friendlistitem key={id} {...props} />
