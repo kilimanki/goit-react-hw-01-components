@@ -1,0 +1,28 @@
+.avatar{
+    width: 60px;
+}
+.tag{
+    color: gray;
+}
+.location{
+    color: gray;
+}
+.list{
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #cdadea;
+        border-radius: 4px;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    background-color: aqua;
+    width: 300px;
+}
+.quantity{
+    font-weight: 700;
+}

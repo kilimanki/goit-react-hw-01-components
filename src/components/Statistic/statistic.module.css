@@ -1,0 +1,15 @@
+.statistics{
+    width: 400px;
+    border: 2px solid black;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    width: 100px;
+ border-radius: 4px;
+
+}
+.list_items{
+display: flex;
+}
