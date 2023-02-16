@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import css from "./statistic.module.css";
+import PropTypes from 'prop-types';
+import css from './statistic.module.css';
 
-export const StatisticList = ({ label, percentage, color }) => {
+export const StatisticItem = ({ label, percentage, color }) => {
   return (
     <li className={css.item} style={{ backgroundColor: color }}>
       <span className="label">{label}</span>
@@ -9,7 +9,7 @@ export const StatisticList = ({ label, percentage, color }) => {
     </li>
   );
 };
-StatisticList.propTypes = {
+StatisticItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };

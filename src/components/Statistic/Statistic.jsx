@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './statistic.module.css';
-import { StatisticList } from './StatisticList';
-function getColor() {
-  return Math.floor(Math.random() * 16777215).toString(16);
-}
+import { StatisticItem } from './StatisticItem';
+import { getColor } from 'Utils/utils';
 export const Statistic = ({ items, title }) => {
   const elements = items.map(({ id, ...props }) => (
-    <StatisticList key={id} {...props} color={`#${getColor()}`} />
+    <StatisticItem key={id} {...props} color={`#${getColor()}`} />
   ));
   return (
     <section className={css.statistics}>
@@ -18,9 +16,8 @@ export const Statistic = ({ items, title }) => {
 Statistic.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
+      title: PropTypes.string,
     })
   ),
 };
